@@ -1,0 +1,140 @@
+/* Estilos gerais do corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #3a7bd5, #00d2ff); /* Fundo gradiente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+    overflow: hidden;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Animação de entrada suave */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilo do container da história */
+#container {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    transform: translateY(50px);
+    animation: slideIn 1s ease-out forwards;
+}
+
+/* Animação para o container deslizar */
+@keyframes slideIn {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Estilo do título */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    color: #ffeb3b;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Estilo do texto da história */
+#story {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #ffffff;
+    animation: fadeInText 2s ease-out;
+}
+
+/* Animação do texto da história */
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Botões de escolha */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 10px;
+    width: 45%;
+    transition: all 0.3s ease;
+    opacity: 0.9;
+}
+
+/* Efeito hover nos botões */
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Botão de voltar ao início */
+#restartBtn {
+    background-color: #e91e63;
+    color: white;
+    border-radius: 10px;
+    padding: 12px 25px;
+    margin-top: 30px;
+    width: 100%;
+    font-size: 1.2rem;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+/* Efeito hover no botão "Voltar ao Início" */
+#restartBtn:hover {
+    background-color: #d81b60;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Botões desabilitados */
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Animação de fade-in para os botões */
+@keyframes fadeInButton {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Efeito de transição no container */
+#choices {
+    animation: fadeInButton 1s ease-out;
+}
+
